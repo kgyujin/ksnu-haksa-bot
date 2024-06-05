@@ -43,7 +43,7 @@ test_ds = ds.skip(train_size + val_size).take(test_size).batch(100)
 # Hyperparameter
 dropout_prob = 0.5
 EMB_SIZE = 128
-EPOCH = 3
+EPOCH = 5
 VOCAB_SIZE = len(p.word_index) + 1
 
 # CNN model definition

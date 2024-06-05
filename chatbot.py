@@ -2,6 +2,8 @@ import json
 import pandas as pd
 import tensorflow as tf
 import torch
+from transformers import BertTokenizer, BertForSequenceClassification
+from transformers import pipeline
 
 from utils.Preprocess import Preprocess
 from utils.FindAnswer import FindAnswer
@@ -53,6 +55,7 @@ try:
 except Exception as e:
     print(f"의도 파악 모델 로드 실패: {e}")
 
+
 # 엑셀 파일 로드
 try:
     df = pd.read_excel('tools/qna/train_test.xlsx')
@@ -75,7 +78,7 @@ except Exception as e:
 
 def process_query(query):
     try:
-        print(f"사용자 질문: {query}")  # 디버깅 메시지 추가
+        # print(f"사용자 질문: {query}")  # 디버깅 메시지 추가
         # 의도 파악
         intent_pred = intent.predict_class(query)
         # print(f"예측된 의도 인덱스: {intent_pred}")  # 디버깅 메시지 추가
