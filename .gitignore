@@ -1,0 +1,7 @@
+# created by virtualenv automatically
+*
+
+dataset/
+archive/
+test_embedding_data.pt
+test_data_embedding.xlsx
