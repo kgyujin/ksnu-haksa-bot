@@ -1,7 +1,12 @@
 # created by virtualenv automatically
 *
 
-dataset/
 archive/
+dataset/
+logs/
 test_embedding_data.pt
 test_data_embedding.xlsx
+train_test2.xlsx
+train_data_old.csv
+#intent_model.h5
+intent_model.keras
