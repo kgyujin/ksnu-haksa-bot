@@ -11,22 +11,26 @@ time_expression = pd.read_csv('../../dataset/trans-dataset/시간표현탐지데
 purpose = pd.read_csv('../../dataset/trans-dataset/용도별목적대화데이터.csv')
 topic = pd.read_csv('../../dataset/trans-dataset/주제별일상대화데이터.csv')
 common_sense = pd.read_csv('../../dataset/trans-dataset/일반상식.csv')
+movie_review = pd.read_csv('../../dataset/trans-dataset/영화리뷰.csv')
 
 time_expression.dropna(inplace=True)
 purpose.dropna(inplace=True)
 topic.dropna(inplace=True)
 common_sense.dropna(inplace=True)
+movie_review.dropna(inplace=True)
 
 text1 = list(time_expression['text'])
 text2 = list(purpose['text'])
 text3 = list(topic['text'])
 text4 = list(common_sense['query']) + list(common_sense['answer'])
+text5 = list(movie_review['document'])
 
-corpus_data = text1 + text2 + text3 + text4
+corpus_data = text1 + text2 + text3 + text4 + text5
 
 # 말뭉치 데이터에서 키워드만 추출해서 사전 리스트 생성
 # p = Preprocess()
-p = Preprocess()
+p = Preprocess(word2index_dic='../../tools/dict/chatbot_dict.bin',
+               userdic='../../utils/user_dic.tsv')
 dict = []
 print("===1===")
 for c in corpus_data:
