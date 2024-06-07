@@ -20,7 +20,7 @@ class FindAnswer:
 
     def search(self, query, intent):
         try:
-            # print(f"검색 시작: query='{query}', intent='{intent}'")  # 디버깅 메시지 추가
+            print(f"검색 시작: query='{query}', intent='{intent}'")  # 디버깅 메시지 추가
             # 형태소 분석
             pos = self.p.pos(query)
 

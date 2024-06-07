@@ -8,10 +8,10 @@ from sentence_transformers import SentenceTransformer, util
 warnings.filterwarnings("ignore", category=FutureWarning, message="`resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.")
 
 model = SentenceTransformer('snunlp/KR-SBERT-V40K-klueNLI-augSTS')
-# embedding_data = torch.load("../tools/qna/embedding_data.pt")
-# df = pd.read_excel("D:/University/KSNU/3_1_머신러닝종합설계/haksa-bot/haksaBot/tools/qna/train_test.xlsx")
-embedding_data = torch.load("../tools/qna/test_embedding_data.pt")
-df = pd.read_excel("D:/University/KSNU/3_1_머신러닝종합설계/haksa-bot/haksaBot/tools/qna/test_train_data.xlsx")
+embedding_data = torch.load("../tools/qna/embedding_data.pt")
+df = pd.read_excel("D:/University/KSNU/3_1_머신러닝종합설계/haksa-bot/haksaBot/tools/qna/train_test.xlsx")
+# embedding_data = torch.load("../tools/qna/test_embedding_data.pt")
+# df = pd.read_excel("D:/University/KSNU/3_1_머신러닝종합설계/haksa-bot/haksaBot/tools/qna/test_train_data.xlsx")
 
 sentence = "머신러닝 학점 몇이야?"
 # sentence = "머신러닝 교수님 누구야?"

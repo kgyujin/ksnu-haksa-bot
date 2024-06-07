@@ -8,7 +8,7 @@ class IntentModel:
     def __init__(self, model_name, preprocess):
 
         # 의도 클래스별 레이블블
-        self.labels = {0: "교수", 1: "장소", 2: "시간"}
+        self.labels = {0: "교수", 1: "장소", 2: "시간", 3: "전공"}
 
         # 의도 분류 모델 불러오기
         self.model = load_model(model_name)

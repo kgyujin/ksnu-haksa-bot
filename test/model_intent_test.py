@@ -75,3 +75,12 @@ print(query)
 print("의도 예측 클래스 : ", predict)
 print("의도 예측 레이블 : ", predict_label)
 print("="*30)
+
+query = "3학년 전공과목을 알려줘"
+predict = intent.predict_class(query)
+predict_label = intent.labels[predict]
+print("="*30)
+print(query)
+print("의도 예측 클래스 : ", predict)
+print("의도 예측 레이블 : ", predict_label)
+print("="*30)
