@@ -4,7 +4,27 @@
 컴공	NNP
 과사	NNP
 과사무실	NNP
+C프로그래밍	NNP
+컴퓨터개론	NNP
+데이터베이스	NNP
+자바프로그래밍	NNP
+컴퓨터구조론	NNP
+Java프로그래밍	NNP
+기초선형대수학	NNP
+자료구조론	NNP
+웹프로그래밍(1)	NNP
+정보, 컴퓨터 교과교육론	NNP
+Web프로그래밍(1)	NNP
+게임공학	NNP
+디지털 영상처리	NNP
 머신러닝 종합설계	NNP
+시스템분석 및 설계	NNP
+정보, 컴퓨터 교과 논리및 논술	NNP
+3D애니메이션	NNP
+SNS설계	NNP
+캡스톤디자인	NNP
+프로그래밍 언어론	NNP
+트랙과정 NNP
 강의실	NNG
 교수	NNG
 교수진	NNG
@@ -14,3 +34,34 @@
 종강	NNG
 학점	NNG
 황룡제천	NNG
+2학기	NNG
+개강일	NNG
+수강신청	NNG
+변경일	NNG
+취소일	NNG
+복학마감일	NNG
+교수강의평가일	NNG
+운영시간	NNG
+휴학	NNG
+마감일	NNG
+중간고사	NNG
+일정	NNG
+졸업논문	NNG
+심사결과	NNG
+보고일	NNG
+복수전공	NNG
+부전공	NNG
+공유전공	NNG
+휴업일	NNG
+수업결손	NNG
+보강일	NNG
+기말고사	NNG
+성적	NNG
+입력일	NNG
+동계	NNG
+계절수업	NNG
+성적열람	NNG
+정정일	NNG
+전공수업	NNG
+연구실 위치	NNG
+전공과목	NNG

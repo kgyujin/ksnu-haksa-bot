@@ -1,3 +1,5 @@
+# 최종 실행 코드
+
 import json
 import pandas as pd
 import tensorflow as tf
@@ -51,7 +53,7 @@ except Exception as e:
 try:
     intent = IntentModel(model_name='./model/intent_model.h5', preprocess=p)
     print("의도 파악 모델 로드 완료..")
-    print(intent)  # 추가: intent 객체 확인
+    print(intent)  # intent 객체 확인
 except Exception as e:
     print(f"의도 파악 모델 로드 실패: {e}")
 
@@ -61,7 +63,7 @@ try:
     df = pd.read_excel('tools/qna/train_test.xlsx')
     for column in df.columns:
         df[column] = df[column].astype(str)
-    print(f"엑셀 파일 컬럼: {df.columns}")  # 추가: 엑셀 파일 컬럼 확인
+    print(f"엑셀 파일 컬럼: {df.columns}")  # 엑셀 파일 컬럼 확인
     print("엑셀 파일 로드 완료..")
 except Exception as e:
     print(f"엑셀 파일 로드 실패: {e}")
