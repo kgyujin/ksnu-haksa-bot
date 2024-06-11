@@ -32,12 +32,10 @@ corpus_data = text1 + text2 + text3 + text4 + text5
 p = Preprocess(word2index_dic='../../tools/dict/chatbot_dict.bin',
                userdic='../../utils/user_dic.tsv')
 dict = []
-print("===1===")
 for c in corpus_data:
     pos = p.pos(c)
     for k in pos:
         dict.append(k[0])
-print("===2===")
 
 # 사전에 사용될 word2index 생성
 # 사전의 첫 번째 인덱스에는 OOV 사용

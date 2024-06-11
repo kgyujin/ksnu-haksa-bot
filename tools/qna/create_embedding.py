@@ -25,3 +25,4 @@ df.to_excel("train_data_embedding.xlsx", index=False)
 embedding_data = torch.tensor(df['embedding_vector'].tolist())
 torch.save(embedding_data, 'embedding_data.pt')
 print("임베딩 pt 파일 생성 완료..")
+

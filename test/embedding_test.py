@@ -14,7 +14,6 @@ df = pd.read_excel("D:/University/KSNU/3_1_머신러닝종합설계/haksa-bot/ha
 # df = pd.read_excel("D:/University/KSNU/3_1_머신러닝종합설계/haksa-bot/haksaBot/tools/qna/test_train_data.xlsx")
 
 sentence = "머신러닝 학점 몇이야?"
-# sentence = "머신러닝 교수님 누구야?"
 print("질문 문장 : ",sentence)
 sentence = sentence.replace(" ","")
 print("공백 제거 문장 : ", sentence)
