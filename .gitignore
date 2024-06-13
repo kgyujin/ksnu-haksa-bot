@@ -4,7 +4,7 @@
 archive/
 #dataset/
 logs/
-test_embedding_data.pt
+#test_embedding_data.pt
 test_data_embedding.xlsx
 train_test2.xlsx
 train_data_old.csv
